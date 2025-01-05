@@ -67,7 +67,7 @@ class _MovieSection extends State<MovieSection> {
 
   void retrieveMovies() async {
     const url =
-        'http://localhost/mobileAppApi/api.php '; //http://jun.wuaze.com/api.php  //http://localhost/mobileAppApi/api.php
+        '//http://jun.wuaze.com/api.php '; //http://jun.wuaze.com/api.php  //http://localhost/mobileAppApi/api.php
     final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
@@ -89,7 +89,7 @@ class _MovieSection extends State<MovieSection> {
 
   void searchMovie(name) async {
     String url =
-        'http://localhost/mobileAppApi/searchMovie.php?name=$name'; //http://localhost/mobileAppApi/searchMovie.php?name=$name
+        '//http://jun.wuaze.com/searchMovie.php?name=$name'; //http://localhost/mobileAppApi/searchMovie.php?name=$name
     final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
